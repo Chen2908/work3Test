@@ -66,6 +66,7 @@ public class MargeTopDown {
         return stubSortArray.sortArray(res);
     }
 
+    //pass
     @Test
     public void allStubsTwoNull(){
         int [] arr1 = null;
@@ -74,7 +75,7 @@ public class MargeTopDown {
         assertNull(result);
     }
 
-    //fails due to logic error - copy copies only the first element
+    //pass- corrected copy
     @Test
     public void allStubsFirstNull(){
         int [] arr1 = null;
@@ -85,7 +86,7 @@ public class MargeTopDown {
     }
 
 
-    //fails due to logic error - copy copies only the first element
+    //pass- corrected copy
     @Test
     public void allStubsTwoNotSorted(){
         int [] arr1 = {7, 5, 3};
@@ -95,7 +96,7 @@ public class MargeTopDown {
         assertArrayEquals(result, realResult);
     }
 
-    //fails due to logic error - copy copies only the first element
+    //pass- corrected copy
     @Test
     public void allStubsTwoSorted(){
         int [] arr1 = {1,2};
@@ -137,18 +138,18 @@ public class MargeTopDown {
         return res;
     }
 
-
+    //pass
     @Test
-    public void copyAndSizeTwoNull(){
+    public void copyAndSizeStubsTwoNull(){
         int [] arr1 = null;
         int [] arr2 = null;
         int [] result = mergeRealSortCopySizeStub(arr1, arr2);
         assertNull(result);
     }
 
-    //fails due to logic error - copy copies only the first element
+    //pass
     @Test
-    public void copyAndSizeFirstNull(){
+    public void copyAndSizeStubsFirstNull(){
         int [] arr1 = null;
         int [] arr2 = {2,1};
         int [] result = mergeRealSortCopySizeStub(arr1, arr2);
@@ -156,9 +157,9 @@ public class MargeTopDown {
         assertArrayEquals(result, arr2);
     }
 
-    //fails due to logic error - copy copies only the first element
+    //pass
     @Test
-    public void copyAndSizeTwoNotSorted(){
+    public void copyAndSizeStubsTwoNotSorted(){
         int [] arr1 = {7, 5, 3};
         int [] arr2 = {4, 3, 1};
         int [] result = mergeRealSortCopySizeStub(arr1, arr2);
@@ -166,9 +167,10 @@ public class MargeTopDown {
         assertArrayEquals(result, realResult);
     }
 
-    //fails due to logic error - copy copies only the first element
+
+    //pass
     @Test
-    public void copyAndSizeTwoSorted(){
+    public void copyAndSizeStubsTwoSorted(){
         int [] arr1 = {1,2};
         int [] arr2 = {3,4};
         int [] result = mergeRealSortCopySizeStub(arr1, arr2);
@@ -209,6 +211,7 @@ public class MargeTopDown {
     }
 
 
+    //pass
     @Test
     public void copyStubTwoNull(){
         int [] arr1 = null;
@@ -217,7 +220,7 @@ public class MargeTopDown {
         assertNull(result);
     }
 
-    //fails due to logic error - copy copies only the first element
+    //pass
     @Test
     public void copyStubFirstNull(){
         int [] arr1 = null;
@@ -227,7 +230,7 @@ public class MargeTopDown {
         assertArrayEquals(result, arr2);
     }
 
-    //fails due to logic error - copy copies only the first element
+    //pass
     @Test
     public void copyStubTwoNotSorted(){
         int [] arr1 = {7, 5, 3};
@@ -237,7 +240,7 @@ public class MargeTopDown {
         assertArrayEquals(result, realResult);
     }
 
-    //fails due to logic error - copy copies only the first element
+    //pass
     @Test
     public void copyStubTwoSorted(){
         int [] arr1 = {1,2};
