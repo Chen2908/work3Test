@@ -11,6 +11,7 @@ public class MargeTopDown {
         program = new Program();
     }
 
+    //pass
     @Test
     public void originalTwoNull(){
         int [] arr1 = null;
