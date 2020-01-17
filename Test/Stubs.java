@@ -33,9 +33,14 @@ public class Stubs {
     public static class StubSortArray extends Program {
         @Override
         public int[] sortArray(int[] arr) {
-            if (arr == null) return null;
-            int[] res = sortArray(arr);
-            return res;
+            if (arr == null)
+                return null;
+            if(arr.length == 0){
+                return arr;
+            }
+            int [] copy = Arrays.copyOf(arr,arr.length);
+            Arrays.sort(copy);
+            return copy;
         }
     }
 
