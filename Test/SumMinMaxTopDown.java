@@ -44,7 +44,7 @@ public class SumMinMaxTopDown {
         Stubs.StubMaxValue maxValue = new Stubs.StubMaxValue();
         return minValue.minValue(arr) + maxValue.maxValue(arr);
     }
-
+   
     @Test
     public void testSumNullStubs (){
         Exception exception = null;

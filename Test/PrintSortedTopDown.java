@@ -90,7 +90,7 @@ public class PrintSortedTopDown {
 
     //fail - not support in Null case, logical problem
     @Test
-    public void PrintNullWithStubs(){
+        public void PrintNullWithStubs(){
         int[] arr = null;
         printSortedWithStubs(arr);
         String[] out = outContent.toString().split("\r\n");
@@ -224,7 +224,7 @@ public class PrintSortedTopDown {
 
     //pass
     @Test
-    public void PrintEmptyWithOTwoOriginal(){
+    public void PrintEmptyWithTwoOriginal(){
         int[] arr = {};
         printSortedWithTwoOriginal(arr);
         String[] out = outContent.toString().split("\r\n");
@@ -293,7 +293,7 @@ public class PrintSortedTopDown {
 
     //pass
     @Test
-    public void PrintEmptyWithOSizeOriginalCopyStub(){
+    public void PrintEmptyWithSizeOriginalCopyStub(){
         int[] arr = {};
         printSortedWithSizeOriginalCopyStub(arr);
         String[] out = outContent.toString().split("\r\n");
